@@ -21,42 +21,31 @@
         </div>
        </div>
        <div class="nav-search">
-        <select class="search-select">
-        <option> All </option>   
-        </select>
+        <select class="search-select"><option> All </option></select>
         <input placeholder="Search Amazon" class="search-input">
-        <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
        </div>
        <div class="nav-country">
-        <select class="cnt-box">
-            <option>EN</option>
-        </select>
+        <select class="cnt-box"><option>EN</option></select>
        </div>
        <div class="nav-signin border">
         <p><span>Hello, sign in</span></p>
-        <select class="nav-sec">
-            <option>
-            Account & Lists
-            </option>
-        </select>
-
+        <select class="nav-sec"><option>Account & Lists</option></select>
        </div>
        <div class="nav-return border">
         <p><span>Returns</span></p>
         <p class="nav-sec">& Orders</p>
       </div>
-      <div class="nav-cart border">
-        <i class="fa-solid fa-cart-shopping"></i>
+      <div class="nav-cart border" id="cart-btn">
+        <div class="cart-icon-wrap">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
         Cart
       </div>
     </div>
     <div class="panel">
-      <div class="panel-all border">
-        <i class="fa-solid fa-bars"></i>
-        All
-      </div>  
+      <div class="panel-all border"><i class="fa-solid fa-bars"></i> All</div>  
       <div class="panel-ops">
         <p class="border">Today's Deals</p>
         <p class="border">Customer Service</p>
@@ -64,131 +53,157 @@
         <p class="border">Gift Cards</p>
         <p class="border">Sell</p>
       </div>
-      <div class="panel-deals border">
-        Shop deals in Electronics
-      </div>
+      <div class="panel-deals border">Shop deals in Electronics</div>
     </div>
    </header>
-
-   <div class="hero-section">
-    <div class="hero-msg">
-        <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click Here to go to amazon.in</a> </p>
+   
+   <div class="hero-section" id="hero-slider">
+    <div class="slide active" style="background-image: url('hero_image.jpg');">
+       <div class="hero-msg">
+    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click Here to go to amazon.in</a></p>
+  </div>
     </div>
-   </div>
+    <div class="slide" style="background-image: url('78270._CB785061629_.jpg');">
+       <div class="hero-msg">
+    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click Here to go to amazon.in</a></p>
+  </div>
+    </div>
+    <div class="slide" style="background-image: url('GW_Hero_Pc_REC_2-1._CB760591616_.jpg');">
+       <div class="hero-msg">
+    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click Here to go to amazon.in</a></p>
+  </div>
+    </div>
+    <div class="slide" style="background-image: url('PC-Hero_3000x1200._CB782932305_.jpg');">
+       <div class="hero-msg">
+    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click Here to go to amazon.in</a></p>
+  </div>
+    </div>
+    <div class="hero-msg">
+    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click Here to go to amazon.in</a></p>
+  </div>
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+</div>
+
    <div class="shop-sec">
-    <div class="box border1">
+    <div class="box border1" data-category="health">
       <div class="box-content">
-        <h2>Health & Presonal Care</h2>
-      <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
-      <a href="https://www.amazon.in/s?k=health+and+personal+care&crid=TAGWVIP6UGI5&sprefix=health+and+pe%2Caps%2C331&ref=nb_sb_ss_mvt-t11-ranker_1_13">See more</a>
+        <h2>Health & Personal Care</h2>
+        <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+        <a class="shop-btn">Shop Now</a>
       </div>
     </div>
-    <div class=" box border1">
-        <div class="box-content">
-        <h2>Rrefresh your space</h2>
+    <div class="box border1" data-category="home">
+      <div class="box-content">
+        <h2>Refresh your space</h2>
         <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
-        <a>Shop Here</a>
-        </div>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    <div class=" box border1">
-        <div class="box-content">
+    <div class="box border1" data-category="gadgets">
+      <div class="box-content">
         <h2>Digital Gadgets</h2>
         <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
-        <a>Shop Here</a>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    </div>
-    <div class="box border1">
-        <div class="box-content">
+    <div class="box border1" data-category="decor">
+      <div class="box-content">
         <h2>Easy updates for elevated spaces</h2>
         <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
-        <a>Shop Here home products</a>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    </div>
-    <div class="box border1">
-        <div class="box-content">
+    <div class="box border1" data-category="beauty">
+      <div class="box-content">
         <h2>Beauty Picks</h2>
         <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
-        <a>Shop Here</a>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    </div>
-    <div class="box border1">
-        <div class="box-content">
+    <div class="box border1" data-category="pets">
+      <div class="box-content">
         <h2>Whatever your Pet needs</h2>
         <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
-        <a>Find Here</a>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    </div>
-    <div class="box border1">
-        <div class="box-content">
+    <div class="box border1" data-category="toys">
+      <div class="box-content">
         <h2>New Arrival in Toys</h2>
         <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
-        <a>See more</a>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    </div>
-    <div class="box border1">
-        <div class="box-content">
-        <h2>Trendy</h2>
+    <div class="box border1" data-category="fashion">
+      <div class="box-content">
+        <h2>Trendy Fashion</h2>
         <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
-        <a>Elevate Your Fashion Here</a>
+        <a class="shop-btn">Shop Now</a>
+      </div>
     </div>
-    </div>
- </div>
+   </div>
+
    <footer>
-    <div class="foot-panel1">
-        Back to Top
-    </div>
+    <div class="foot-panel1" id="back-to-top">Back to Top</div>
     <div class="foot-panel2">
         <ul>
             <p>Get to know Us</p>
-        <a>Careers</a>
-        <a>Blog</a>
-        <a>About Amazon</a>
-        <a>Invester Relations</a>
-        <a>Amazon Devices</a>
-        <a>Amazon Science</a>
+            <a>Careers</a><a>Blog</a><a>About Amazon</a>
+            <a>Investor Relations</a><a>Amazon Devices</a><a>Amazon Science</a>
         </ul>
         <ul>
             <p>Connect with Us</p>
-            <a>Facebook</a>
-            <a>Twitter</a>
-            <a>Instagram</a>
+            <a>Facebook</a><a>Twitter</a><a>Instagram</a>
         </ul>
         <ul>
             <p>Make Money with Us</p>
-            <a>Sell on Amazon</a>
-            <a>Sell under Amazon Accelerator</a>
-            <a>Protect and Build Your Brand</a>
-            <a>Amazon Global Selling</a>
-            <a>Supply to Amazon</a>
-            <a>Become an Affiliate</a>
-            <a>Fulfilment by Amazon</a>
+            <a>Sell on Amazon</a><a>Sell under Amazon Accelerator</a>
+            <a>Protect and Build Your Brand</a><a>Amazon Global Selling</a>
+            <a>Become an Affiliate</a><a>Fulfilment by Amazon</a>
             <a>Advertise Your Products</a>
-            <a>Amazon Pay on Merchants</a>
-            </ul>
+        </ul>
         <ul>
             <p>Let Us Help You</p>
-            <a>Your Account</a>
-            <a>Returns Centre</a>
-            <a>Recalls and Product Safety Alerts</a>
-            <a>100% Purchase Protection</a>
-            <a>Amazon App Download</a>
-            <a>Help</a>
-</ul>
-</div>
-<div class="foot-panel3">
-<div class="logo"></div>
-</div>
-<div class="foot-panel4">
-    <div class="pages">
-        <a>Conditions of use</a>
-        <a>Privacy choices</a>
-        <a>Your ads Privacy choices</a>
+            <a>Your Account</a><a>Returns Centre</a>
+            <a>100% Purchase Protection</a><a>Amazon App Download</a><a>Help</a>
+        </ul>
     </div>
-    <div class="copyright">
-        © 1996-2026, Amazon.com, Inc. or its affiliates
+    <div class="foot-panel3"><div class="logo"></div></div>
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of use</a>
+            <a>Privacy choices</a>
+            <a>Your ads Privacy choices</a>
+        </div>
+        <div class="copyright">© 1996-2026, Amazon.com, Inc. or its affiliates</div>
     </div>
-</div>
-    </footer>
+   </footer>
+
+   <!-- Cart Overlay -->
+   <div id="cart-overlay"></div>
+
+   <!-- Cart Sidebar -->
+   <div id="cart-sidebar">
+     <div class="cart-header">
+       <h2>Shopping Cart</h2>
+       <button class="cart-close-btn" id="cart-close">✕</button>
+     </div>
+     <div id="cart-items"></div>
+     <div class="cart-footer">
+       <div class="cart-total-row">
+         <span>Total:</span>
+         <span id="cart-total">₹0</span>
+       </div>
+       <button class="checkout-btn">Proceed to Checkout</button>
+       <button class="continue-btn" id="continue-shopping">Continue Shopping</button>
+     </div>
+   </div>
+
+   <div id="toast"></div>
    <script src="script.js"></script>
 </body>
 </html>
